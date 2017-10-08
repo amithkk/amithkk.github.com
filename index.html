@@ -1,39 +1,46 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<title>Amith KK</title>
+	<link rel="stylesheet" href="css/html5reset-1.6.1.css" type="text/css" media="screen,print">
+	<link href="css/index.css" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript/jquery.novacancy.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#no').novacancy({
+				'reblinkProbability': 0.1,
+				'blinkMin': 0.2,
+				'blinkMax': 0.6,
+				'loopMin': 8,
+				'loopMax': 10,
+				'color': '#4286f4',
+				'glow': ['0 0 80px #4286f4	', '0 0 30px #008000', '0 0 6px #3b7fed']
+			}); 
 
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
-    <title>Amith KK by Amithkk</title>
-  </head>
-
-  <body>
-
-    <header>
-      <div class="container">
-        <h1>Amith KK</h1>
-        <h2>My GitHub Page</h2>
-
-        <section id="downloads">
-          <a href="https://github.com/Amithkk" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
-
-    <div class="container">
-      <section id="main_content">
-<<<<<<< HEAD
-        <p>Meh</p>
-=======
-        <p>Temporary Landing Page for Now</p>
->>>>>>> 33a6793238d996b3c29f23ba85ad516e2a9e7db8
-      </section>
-    </div>
-
-    
-  </body>
+			$('#vacancy').novacancy({
+				'blink': 1,
+				'off': 1,
+				'color': 'Red',
+				'glow': ['0 0 80px Red', '0 0 30px FireBrick', '0 0 6px DarkRed']
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="board">
+	    <p id="no">Coming</p>
+	    <p id="vacancy">Soon</p>
+	</div>
+</body>
 </html>

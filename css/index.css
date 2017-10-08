@@ -1,0 +1,23 @@
+body {
+    background-image: url('img/bg.jpg');
+}
+
+.board {
+    text-align: center;
+    width: 500px;
+    height: 150px;
+    position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0px;
+  margin: auto;
+    padding: 20px;
+}
+
+.board p {
+    font-size: 75px;
+    font-family: 'Monoton', cursive;
+    color: #fff;
+    text-transform: uppercase;
+}
