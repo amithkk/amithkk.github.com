@@ -1,54 +1,275 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
-<head>
-	
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width" />
-	<title>Amith KK</title>
-	<link rel="stylesheet" href="css/html5reset-1.6.1.css" type="text/css" media="screen,print">
-	<style>
-	body {
-    background-image: url('img/bg.jpg');
-    background-size: cover;
-     background-repeat: no-repeat;
-}
-</style>
-	<link href="css/index.css" rel="stylesheet" type="text/css">
-	<link href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
-	<!-- IE Fix for HTML5 Tags -->
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script type="text/javascript" src="javascript/jquery.novacancy.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#no').novacancy({
-				'reblinkProbability': 0.1,
-				'blinkMin': 0.2,
-				'blinkMax': 0.6,
-				'loopMin': 8,
-				'loopMax': 10,
-				'color': '#4286f4',
-				'glow': ['0 0 80px #4286f4	', '0 0 30px #008000', '0 0 6px #3b7fed']
-			}); 
+<html lang="en">
 
-			$('#vacancy').novacancy({
-				'blink': 1,
-				'off': 1,
-				'color': 'Red',
-				'glow': ['0 0 80px Red', '0 0 30px FireBrick', '0 0 6px DarkRed']
-			});
-		});
-	</script>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Amith KK, Software Developer">
+    <meta name="author" content="Amith KK">
+    <title>Amith KK</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+          integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+    <link href="css/amy.min.css" rel="stylesheet">
+
 </head>
-<body>
-	<div class="board">
-	    <p id="no">Coming</p>
-	    <p id="vacancy">Soon</p>
-	</div>
+
+<body id="page-top">
+<script src="https://cdn.jsdelivr.net/npm/typeit@5.10.1/dist/typeit.min.js"></script>
+
+<!-- Navigation Components -->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand brand js-scroll-trigger" href="#page-top">Amith KK</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#about">Bio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Header -->
+<header class="header-hero">
+    <div class="header-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="brand-heading">Hey There!</h1>
+                    <p class="intro-text">I make <span id="typewriter"></span></p>
+                    <a href="#about" class="btn btn-circle js-scroll-trigger">
+                        <i class="fa fa-angle-double-down animated"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- About Section -->
+<section id="about" class="content-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2>More About Me</h2>
+                <img class="avatar-lg" src="https://www.gravatar.com/avatar/17f955dcc67792f420f47dc6471d376a?s=200"/>
+                <p>I'm an 19 year old Information Science and Engineering student and casual Software Developer based in
+                    Bangalore and studying in
+                    <a href="http://nmit.ac.in">Nitte Meenakshi Institute Of Technology</a>. I like tinkering with software as well as
+                    electronics, ocassionally making a DIY project or two.
+                    In my spare time I write poetry (some of which you can find at <a href="http://instagram.com/deducingtimeywimey">@deducingtimeywimey</a>)
+                    and catch up on the ocassional TV Series
+
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="mx-auto">
+                <h2>Skills</h2>
+
+                <div class="card-columns mx-2">
+                    <div class="card shadow bg-dark">
+                        <div class="card-header">Android App Development</div>
+                        <div class="card-body">
+                            <p class="card-text">Experience with designing and creating android apps adhering to the
+                                material design standard and distribution with the Google Play/Amazon Webstore.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow bg-dark">
+                        <div class="card-header">Python + Django</div>
+                        <div class="card-body">
+                            <p class="card-text">Worked on multiple projects involving advanced use of Python and
+                                Django.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow bg-dark">
+                        <div class="card-header">React Framework</div>
+                        <div class="card-body">
+                            <p class="card-text">Intermediate at developing frontends with React+Redux.</p>
+                        </div>
+                    </div>
+                    <div class="card shadow bg-dark">
+                        <div class="card-header">Linux and Backend Management</div>
+                        <div class="card-body">
+                            <p class="card-text">Adept at working with linux CLI utilities, SQL Databases, and managing
+                                servers for hosting. Over 8k reputation on <a href="https://askubuntu.com/users/17722/amith-kk">AskUbuntu</a>.</p>
+                        </div>
+                    </div>
+
+                    <div class="card shadow bg-dark">
+                        <div class="card-header">W3 Standards and Domains</div>
+                        <div class="card-body">
+                            <p class="card-text">Extensive experience with HTML5/CSS3/JS, creating and managing
+                                domains.</p>
+                        </div>
+                    </div>
+
+                    <div class="card shadow bg-dark">
+                        <div class="card-header">IoT Concepts</div>
+                        <div class="card-body">
+                            <p class="card-text">Basic electronics and embedded system programming concepts with
+                                development boards like the Arduino. RasPi and NodeMCU</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="project-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="mx-auto">
+                <h2>Projects</h2>
+                <div class="card-deck mx-2">
+                    <div class="card mb-4 shadow bg-dark" style="width: 300px;">
+                        <img class="card-img-top img-fluid"  src="/img/project_assets/ay18-promo.png"
+                             alt="Anaadyanta 2018">
+                        <div class="card-body">
+                            <h5 class="card-title">Anaadyanta App</h5>
+                            <p class="card-text">Android app for the 2018 edition of the <a href="http://anaadyanta.org">Anaadyanta</a> Fest
+                                powered by Firebase</p>
+                            <div class="card-footer bg-transparent border-0">
+                            <a href="https://play.google.com/store/apps/details?id=com.anaadyanta.ay18" class="btn btn-default"><i class="fab fa-fw fa-google-play"></i>Google Play</a>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 shadow bg-dark" style="width: 300px;">
+                        <img class="card-img-top img-fluid"  src="/img/project_assets/ay-framework-promo.png"
+                             alt="Anaadyanta Backend">
+                        <div class="card-body">
+                            <h5 class="card-title">AY Backend</h5>
+                            <p class="card-text">Django based event management system created for the <a href="http://anaadyanta.org">Anaadyanta</a>
+                                Fest</p>
+                            <div class="card-footer bg-transparent border-0">
+                                <a href="#" class="btn btn-default"><i class="fab fa-fw fa-github"></i>GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-sm-block d-md-none"><!-- wrap every 2 on sm--></div>
+
+                    <div class="card mb-4 shadow bg-dark" style="width: 300px;">
+                        <img class="card-img-top img-fluid"  src="/img/project_assets/teamv-promo.png"
+                             alt="Anaadyanta Backend">
+                        <div class="card-body">
+                            <h5 class="card-title">Team Website</h5>
+                            <p class="card-text">Website created for an RCDC team, powered by bootstrap and animate.css</p>
+                            <div class="card-footer bg-transparent border-0">
+                                <a href="http://www.teamvyaghra.in/" class="btn btn-default"><i class="fas fa-fw fa-globe"></i>Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100 d-none d-md-block d-lg-none"><!-- wrap every 3 on md--></div>
+
+                    <div class="card mb-4 shadow bg-dark" style="width: 300px;">
+                        <img class="card-img-top img-fluid"  src="/img/project_assets/postfixify-promo.png"
+                             alt="Postfixify">
+                        <div class="card-body">
+                            <h5 class="card-title"> Postfixify </h5>
+                            <p class="card-text">Mini webapp to illustrate conversion of infix expressions to
+                                postfix with steps</p>
+                            <div class="card-footer bg-transparent border-0">
+                                <a href="http://amithkk.github.io/infix2postfix/" class="btn btn-default"><i class="fas fa-fw fa-globe"></i>Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact/Social Section -->
+<section id="contact" class="contact-section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mx-auto">
+                <h2>Contact Me</h2>
+                <p>Feel free to contact me at
+                    <a href="" id="eml">[Javascript Not Working?]</a> or reach me at any of the below social outlets
+                <ul class="list-inline banner-social-buttons">
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/TheRealAmithKK" class="btn btn-default btn-lg">
+                            <i class="fab fa-twitter fa-fw"></i>
+                            <span class="social-name">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/amithkk" class="btn btn-default btn-lg">
+                            <i class="fab fa-github fa-fw"></i>
+                            <span class="social-name">GitHub</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/amith-kk-694694127/" class="btn btn-default btn-lg">
+                            <i class="fab fa-linkedin fa-fw"></i>
+                            <span class="social-name">LinkedIn</span>
+                        </a>
+                    </li>
+                <li class="list-inline-item">
+                    <a href="https://www.facebook.com/kk.amith" class="btn btn-default btn-lg">
+                        <i class="fab fa-facebook fa-fw"></i>
+                        <span class="social-name">Facebook</span>
+                    </a>
+                </li>
+
+                <li class="list-inline-item">
+                    <a href="http://instagram.com/deducingtimeywimey" class="btn btn-default btn-lg">
+                        <i class="fab fa-instagram fa-fw"></i>
+                        <span class="social-name">Insta</span>
+                    </a>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container text-center">
+        <p>Copyright &copy; Amith KK 2018</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Jquery JS -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts -->
+<script src="js/amy.min.js"></script>
+
 </body>
+
 </html>
